@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    color: white;
+    width: 400px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+}
+
+.daniel {
+    background-color: hsl(263, 55%, 52%);
+    padding: 30px;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
+    border-radius: 0.5rem;
+}
+
+.jonathan {
+    padding: 30px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0.5rem;
+}
+
+.jeanette {
+    padding: 30px;
+    background-color: grey;
+    border-radius: 0.5rem;
+    color: hsl(245, 7%, 37%);
+    font-weight: 600;
+}
+
+
+.patrick {
+    padding: 30px;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 0.5rem;
+}
+
+.kira {
+    padding: 30px;
+    background-color: pink;
+    border-radius: 0.5rem;
+    color: black;
+}
+
+
+
+img {
+    border-radius: 50%;
+    border: 2px solid grey;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.name span {
+    color: rgb(238, 236, 236, 0.5);
+    font-size: 14px;
+}
+
+.text1 {
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+.text2 {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(238, 236, 236, 0.4);
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        width: 1000px;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+
+    .grid-row-span-2 {
+        grid-row: span 2;
+    }
+
+    .kira {
+        grid-column-start: 4;
+        grid-row: 1/3;
+    }
+
+}
